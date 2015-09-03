@@ -104,6 +104,33 @@ end
 
 closeio = Closeio::Client.new(CLOSEIO_API, false)
 
+
+
+
+
+
+
+
+# Brad's Contribution 
+
+# lead_emails.pmap do |email|
+#  new_lead = gen_new_lead_template
+
+#  if email.has_key?(‘caller_number’)
+#    contact = {phones'=>[]}
+#    contact['name'] = “Grasshopper_’caller_number’”
+
+#    phone1 = email.has_key?(‘caller_number’) ? {"phone" => email['Phone1Number'], "type" => (email['Phone1Type'] ? email['Phone1Type'] : "office")} : nil
+
+#    contact['phones'] << phone1 if phone1
+
+#    if email1 or phone1
+#      new_lead['contacts'] << contact
+#    end
+
+
+
+
 lead_emails.pmap do |email|
   new_lead = gen_new_lead_template
 
